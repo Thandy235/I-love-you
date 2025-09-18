@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Message For My Beautiful Mom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #FFF9E6 0%, #FFFFFF 100%);
+            color: #8B7500;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(218, 165, 32, 0.2);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .gold-border {
+            border: 3px solid #D4AF37;
+            border-radius: 20px;
+            padding: 2rem;
+            position: relative;
+        }
+        
+        .heart {
+            position: absolute;
+            color: #FFD700;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .heart-1 {
+            top: 20px;
+            left: 30px;
+            font-size: 40px;
+        }
+        
+        .heart-2 {
+            bottom: 40px;
+            right: 30px;
+            font-size: 50px;
+        }
+        
+        .heart-3 {
+            top: 60px;
+            right: 40px;
+            font-size: 35px;
+        }
+        
+        .heart-4 {
+            bottom: 30px;
+            left: 40px;
+            font-size: 45px;
+        }
+        
+        h1 {
+            color: #D4AF37;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .message {
+            font-size: 1.4rem;
+            line-height: 1.7;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .btn {
+            background: linear-gradient(to right, #D4AF37, #FFD700);
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.6);
+        }
+        
+        .btn:active {
+            transform: translateY(1px);
+        }
+        
+        .signature {
+            font-style: italic;
+            font-size: 1.6rem;
+            margin-top: 2rem;
+            color: #D4AF37;
+            text-align: right;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .page {
+            display: none;
+            animation: fadeIn 1s ease;
+        }
+        
+        .active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .floral-decoration {
+            color: #D4AF37;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            opacity: 0.7;
+        }
+        
+        .instructions {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 10px;
+            font-size: 0.9rem;
+            color: #8B7500;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+                width: 95%;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .message {
+                font-size: 1.2rem;
+            }
+            
+            .btn {
+                padding: 0.8rem 2rem;
+                font-size: 1.1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .message {
+                font-size: 1.1rem;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gold-border">
+            <!-- Hearts as background decoration -->
+            <i class="heart heart-1 fas fa-heart"></i>
+            <i class="heart heart-2 fas fa-heart"></i>
+            <i class="heart heart-3 fas fa-heart"></i>
+            <i class="heart heart-4 fas fa-heart"></i>
+            
+            <!-- Page 1 -->
+            <div id="page1" class="page active">
+                <div class="floral-decoration">
+                    <i class="fas fa-leaf"></i> <i class="fas fa-leaf"></i> <i class="fas fa-leaf"></i>
+                </div>
+                
+                <h1>For My Dearest Mom</h1>
+                
+                <div class="message">
+                    <p>They say a mother's love is the closest thing to God's love on Earth, and I believe it. Your love has been my constant guide, my warmest comfort, and my strongest foundation.</p>
+                </div>
+                
+                <div class="floral-decoration">
+                    <i class="fas fa-leaf"></i> <i class="fas fa-leaf"></i> <i class="fas fa-leaf"></i>
+                </div>
+                
+                <button class="btn" onclick="showPage('page2')">
+                    Read My Message <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            
+            <!-- Page 2 -->
+            <div id="page2" class="page">
+                <div class="floral-decoration">
+                    <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
+                </div>
+                
+                <h1>My Beautiful Mom,</h1>
+                
+                <div class="message">
+                    <p>I was just sitting here thinking about my life, and so many of my best memories have you right at the center of them. I don't tell you enough how much I truly love you and appreciate you.</p>
+                    
+                    <p>Thank you for all the big things, the sacrifices you made, the lessons you taught, and the endless love you've given. But thank you also for the little things: your comforting voice, you believing in me even when I didn't believe in myself, and the way you make everything feel like home.</p>
+                    
+                    <p>You are my first home, my safest place, and my biggest supporter. I am who I am because of you. I hope you know how incredible you are and how much you are loved.</p>
+                </div>
+                
+                <div class="signature">
+                    <p>With all my heart,</p>
+                    <p>your kasuli,</p>
+                    <p>THANDY</p>
+                </div>
+                
+                <button class="btn" onclick="showPage('page1')">
+                    <i class="fas fa-arrow-left"></i> Back
+                </button>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <p><i class="fas fa-info-circle"></i> To share this with Mom, copy the URL from your browser's address bar and send it via WhatsApp</p>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show the requested page
+            document.getElementById(pageId).classList.add('active');
+            
+            // Scroll to top for better user experience
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
